@@ -3,8 +3,8 @@
 ###
 
 ### required libraries
-library("grid")     # for visualization
-library("lattice")  # for visualization
+library("grid")
+library("lattice")
 
 ### plot of objective
 plot_objective_2d <- function(f, xlim, ylim, res = c(0.01, 0.01)) {

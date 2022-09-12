@@ -2,7 +2,7 @@
 ### 2d test functions
 ###
 
-### rosenbrock function
+### Rosenbrock function
 f_rosen <- function(x) 100*(x[2] - x[1]^2)^2 + (1 - x[1])^2
 grad_rosen <- function(x) {
   c(-400*x[1]*(x[2] - x[1]^2) - 2*(1 - x[1]),
@@ -12,7 +12,7 @@ hess_rosen <- function(x) {
   matrix(c(1200*x[1]^2 - 400*x[2]^2 + 2, -400*x[1], -400*x[1], 200),ncol = 2)
 }
 
-### himmelblau function
+### Himmelblau function
 f_himmel <- function(x) (x[1]^2 + x[2] - 11)^2 + (x[1] + x[2]^2 - 7)^2
 grad_himmel <- function(x) {
   c(4*x[1]*(x[1]^2 + x[2] - 11) + 2*(x[1] + x[2]^2 - 7),
